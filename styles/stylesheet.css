@@ -1,0 +1,36 @@
+:root {
+  --bg-color: #000400;
+  --text-color: #6c6;
+  --link-color: #99f;
+  --filler-color: #262;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+footer {
+  color: var(--filler-color);
+  text-align: center;
+}
+
+a {
+  color: var(--link-color);
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+  grid-column-start: 1;
+  grid-column-end: span 3;
+}
+
+.grid-item hr {
+  border: dashed;
+  border-top: 1px; /* this sucks fix it later */
+  color: #363;
+}
