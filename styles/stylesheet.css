@@ -34,3 +34,14 @@ a {
   border-top: 1px; /* this sucks fix it later */
   color: #363;
 }
+
+.grid-item main {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.grid-item main number {
+  display: block;
+}
