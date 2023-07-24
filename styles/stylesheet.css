@@ -19,6 +19,10 @@ a {
   color: var(--link-color);
 }
 
+button, input, form {
+  margin: 0.2em;
+}
+
 .grid-layout {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -42,6 +46,7 @@ a {
   flex-wrap: wrap;
 }
 
-.grid-item main number {
-  display: block;
+.modifier {
+  display:flex;
+  flex-direction: column;
 }
