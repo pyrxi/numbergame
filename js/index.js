@@ -13,7 +13,7 @@ function numberGoUp () {
   // reassigns the value of the number to the incremented amount
   main_number = ((main_number*10) + (increment*10))/10;
   // updates the ui
-  number_display.innerHTML = main_number;
+  number_display.innerHTML = Math.floor(main_number);
 }
 
 function modOneUp(amount, price) {
@@ -26,9 +26,9 @@ function modOneUp(amount, price) {
     // subtract main number by modifier1 cost
     main_number = main_number - price;
     // update display
-    number_display.innerHTML = main_number.toPrecision(2);
-    modifier1_display.innerHTML = mod1;
-    incremental_display.innerHTML = increment;
+    number_display.innerHTML = Math.floor(main_number);
+    modifier1_display.innerHTML = Math.floor(mod1);
+    incremental_display.innerHTML = Math.floor(increment);
   }
 }
 
