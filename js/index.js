@@ -31,7 +31,3 @@ function modOneUp(amount, price) {
     incremental_display.innerHTML = Math.floor(increment);
   }
 }
-
-function submitOnPress() {
-  response_display.innerHTML = "no";
-}
